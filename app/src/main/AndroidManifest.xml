@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.competition" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".assets.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddCompetitionActivity"
+            android:label="@string/title_activity_add_competition" >
+        </activity>
+        <activity
+            android:name=".CompetitionsActivity"
+            android:label="@string/title_activity_competitions" >
+        </activity>
+        <activity
+            android:name=".AddCompetitorActivity"
+            android:label="@string/title_activity_add_competitor" >
+        </activity>
+        <activity
+            android:name=".CompetitorsActivity"
+            android:label="@string/title_activity_competitors" >
+        </activity>
+    </application>
+
+</manifest>
